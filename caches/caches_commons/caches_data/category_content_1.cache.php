@@ -690,7 +690,7 @@ return array (
   \'template_list\' => \'default\',
   \'category_template\' => \'category\',
   \'list_template\' => \'list\',
-  \'show_template\' => \'show\',
+  \'show_template\' => \'show_picture\',
   \'meta_title\' => \'\',
   \'meta_keywords\' => \'\',
   \'meta_description\' => \'\',
