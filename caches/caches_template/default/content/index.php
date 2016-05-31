@@ -4,7 +4,7 @@
 
  <link rel="stylesheet" href="statics/skippr/skippr.css">
  <script src="statics/skippr/skippr.min.js"></script>
- <script type="text/javascript">
+ <script type="text/javascript"> 
  	$(function(){
  		 $("#theTarget").skippr({
  		 	transition: 'slide',
