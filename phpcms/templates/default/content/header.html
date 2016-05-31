@@ -35,16 +35,16 @@
 <div class="base top">
 <p>
 
-<img src="statics/images/ztct/phone.png" />
+<img src="/statics/images/ztct/phone.png" />
 <a href='#'>0851-86720668</a>
-<img src="statics/images/ztct/weixin.png" />
+<img src="/statics/images/ztct/weixin.png" />
 <a id="weixin" href="#">关注我们</a>
-<img class="weixin-code" src="statics/images/ztct/weixin-code.png" />
+<img class="weixin-code" src="/statics/images/ztct/weixin-code.png" />
 </p>
 </div>
 <div class="nav">
 	<div class="logo">
-		<img src="statics/images/ztct/logo.png" />
+		<img src="/statics/images/ztct/logo.png" />
 	</div>
 	<div class="shadow">
 	</div>

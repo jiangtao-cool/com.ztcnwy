@@ -1,3 +1,5 @@
 <?php
-return NULL;
+return array (
+  0 => 9,
+);
 ?>
