@@ -1,0 +1,30 @@
+.base .content {margin-top: 80px;}
+.content table {width: 100%;}
+
+
+.content h1{height:32px; line-height: 32px;  font-size:20px;}
+.content h1.title{
+	background:url(../../statics/images/ztct/h1bg.png) no-repeat left center;
+	text-indent: 15px;
+}
+
+.content h2 {
+	font-size: 15px;
+}
+.content h3 {
+	font-size: 14px;
+}
+.content em {
+	font-weight: lighter;
+}
+.content .menu{vertical-align: top;}
+.content .menu h2{height:18px; line-height: 18px; text-indent:25px; font-size:16px;  }
+.content .menu ul{border-right: 1px solid #c9c9c9;width: 110px;}
+.content .menu ul li {line-height: 24px;margin-top: 20px;}
+.content .menu li.active h2{background:url(../../statics/images/ztct/h2Bg2.png) no-repeat left center;}
+.content .menu li.active h2 a{color:#ff7d13;}
+.content .menu li h2 a{color: #000000;}
+.content .menu li h2 a:active{color: #000000;}
+
+
+.data-content {width: 80%;}

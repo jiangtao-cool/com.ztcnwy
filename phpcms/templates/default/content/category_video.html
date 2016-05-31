@@ -1,0 +1,88 @@
+ {template "content","header"}
+
+{php $id = $_GET[id];}
+{php $url = $_SERVER['REQUEST_URI'];}
+{php $url = preg_replace('/(&|\?)id=[^&]+/', '', $url)}
+
+
+
+<link rel="stylesheet" href="muban/style/list.css" />
+<style>
+	.img-content {
+		
+	}
+	.img-content>img{
+		width: 15%;
+	}
+	.img-content>div{
+		display: inline-block;
+		width: 77%;
+		margin-left: 4%;
+		vertical-align: top;
+	}
+	
+</style>
+<!--left menu-->
+<div class="base">
+	<div class="content">
+		<table >
+			<tr>
+				<!-- menu -->
+				<td width="15%" class="menu">
+					<ul>
+			   			{loop subcat($catid)  $v} 
+			   				{php if (!isset($id)) $id=$v[catid]}
+			   				{php if ($id == $v[catid]) $current_cat = $v}
+			   			
+			   				<li {if ($id==$v[catid])} class="active" {/if}  >
+			   					<h2><a href="{$url}&id={$v[catid]}">{$v[catname]}</a></h2>
+			   				</li>
+						{/loop}
+			   		</ul>
+				</td>
+				
+				
+				<td>
+					<h1 class="title color-main border-bottom">
+						{$current_cat[description]}
+					</h1>
+					
+					<table>
+						<tr>
+							{loop subcat($id)  $v} 
+								<td><h2><a href="{$url}&id={$v[catid]}">{$v[catname]}</a></h2></td>
+							{/loop}
+						</tr>
+						
+					</table>
+		   					
+					
+					{pc:content  action="lists" catid="$id" order="id DESC" num="4" moreinfo="1"}
+					 <ul class="mt20">
+						 {loop $data $key $val}
+						 <li> 
+						 	<h3>{$val['title']} <em class="right">{date('Y-m-d',$val[inputtime])}</em> </h3>
+						 	<div class="img-content mt10">
+						 		<img src="{$val[thumb]}" />
+						 		<div class="text-border">
+						 		 {$val['content']}
+						 		</div>
+						 	</div>
+						 </li>
+						 {/loop}
+					 </ul>
+					 {/pc}
+				</td>
+			</tr>
+			
+			
+		</table>
+		
+
+	</div>
+</div>
+
+{template "content","footer"}
+</body>
+
+</html>

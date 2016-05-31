@@ -1,0 +1,70 @@
+ {template "content","header"}
+
+{php $id = $_GET[id];}
+{php $url = $_SERVER['REQUEST_URI'];}
+{php $url = preg_replace('/(&|\?)id=[^&]+/', '', $url)}
+{php if (isset($id)) $where="id=$id";}
+
+{pc:content action="lists" catid="$catid" num="1" moreinfo="1" where="$where" order="listorder" }
+	{php $model = array_shift($data)} 
+	{php if (!isset($id))$id = $model[id]}
+	{php $content= $model[content]}
+	{php $English_title= $model[English_title]}
+	{php $English_title_arr = explode(' ', $English_title)}
+	{php $short_content= $model[short_content]}
+	{php $picture= $model[picture]}
+	{php $title = $model[title]}
+{/pc}
+
+
+
+<link rel="stylesheet" href="muban/style/list.css" />
+<!--left menu-->
+<div class="base">
+	<div class="content">
+		<table >
+			<tr>
+				<!-- menu -->
+				<td width="15%" class="menu">
+					<ul >
+					{pc:content action="lists" catid="$catid" num="20" } 
+						{loop $data  $r}
+							<li {if ($id==$r[id])} class="active" {/if} >
+								<h2><a href="{$url}&id={$r[id]}">{$r[title]}</a></h2>
+							</li>
+						{/loop} 
+					{/pc}
+					</ul>
+				</td>
+				
+				<!-- content -->
+				<td width="35%">
+					<h1><span class="color-main-strong">{$English_title_arr[0]}</span> <span class="color-main">{$English_title_arr[1]}</span> </h1><br>
+					
+					<h1 class="title color-main">{$title}1</h1>
+					
+					<h2 class="color-main mt10">{$short_content}</h2>
+					
+					<div class="border mt20 data-content">
+						{$content}
+					</div>
+					
+				</td>
+				
+				<td width="45%">
+					<img src="{$picture}"  />
+					
+				</td>
+			</tr>
+			
+			
+		</table>
+		
+
+	</div>
+</div>
+
+{template "content","footer"}
+</body>
+
+</html>
