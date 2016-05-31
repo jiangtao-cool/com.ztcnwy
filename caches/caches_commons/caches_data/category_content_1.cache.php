@@ -16,7 +16,7 @@ return array (
     'description' => '',
     'parentdir' => '',
     'catdir' => 'about_us',
-    'url' => 'http://localhost/index.php?m=content&c=index&a=lists&catid=9',
+    'url' => 'http://www.ztcnwy.com/index.php?m=content&c=index&a=lists&catid=9',
     'items' => '2',
     'hits' => '0',
     'setting' => 'array (
@@ -67,7 +67,7 @@ return array (
     'description' => '',
     'parentdir' => '',
     'catdir' => 'service_project',
-    'url' => 'http://localhost/index.php?m=content&c=index&a=lists&catid=10',
+    'url' => 'http://www.ztcnwy.com/index.php?m=content&c=index&a=lists&catid=10',
     'items' => '2',
     'hits' => '0',
     'setting' => 'array (
@@ -118,7 +118,7 @@ return array (
     'description' => '',
     'parentdir' => '',
     'catdir' => 'culture',
-    'url' => 'http://localhost/index.php?m=content&c=index&a=lists&catid=11',
+    'url' => 'http://www.ztcnwy.com/index.php?m=content&c=index&a=lists&catid=11',
     'items' => '0',
     'hits' => '0',
     'setting' => 'array (
@@ -169,7 +169,7 @@ return array (
     'description' => '',
     'parentdir' => '',
     'catdir' => 'group_information',
-    'url' => 'http://localhost/index.php?m=content&c=index&a=lists&catid=12',
+    'url' => 'http://www.ztcnwy.com/index.php?m=content&c=index&a=lists&catid=12',
     'items' => '0',
     'hits' => '0',
     'setting' => 'array (
@@ -220,7 +220,7 @@ return array (
     'description' => '',
     'parentdir' => '',
     'catdir' => 'zhogntian_home',
-    'url' => 'http://localhost/index.php?m=content&c=index&a=lists&catid=13',
+    'url' => 'http://www.ztcnwy.com/index.php?m=content&c=index&a=lists&catid=13',
     'items' => '0',
     'hits' => '0',
     'setting' => 'array (
@@ -271,7 +271,7 @@ return array (
     'description' => '',
     'parentdir' => '',
     'catdir' => 'join_us',
-    'url' => 'http://localhost/index.php?m=content&c=index&a=lists&catid=14',
+    'url' => 'http://www.ztcnwy.com/index.php?m=content&c=index&a=lists&catid=14',
     'items' => '1',
     'hits' => '0',
     'setting' => 'array (
@@ -322,7 +322,7 @@ return array (
     'description' => '',
     'parentdir' => '',
     'catdir' => 'property_information',
-    'url' => 'http://localhost/index.php?m=content&c=index&a=lists&catid=15',
+    'url' => 'http://www.ztcnwy.com/index.php?m=content&c=index&a=lists&catid=15',
     'items' => '0',
     'hits' => '0',
     'setting' => 'array (
@@ -373,7 +373,7 @@ return array (
     'description' => '',
     'parentdir' => 'group_information/',
     'catdir' => 'zhongtianxinwen',
-    'url' => 'http://localhost/index.php?m=content&c=index&a=lists&catid=24',
+    'url' => 'http://www.ztcnwy.com/index.php?m=content&c=index&a=lists&catid=24',
     'items' => '1',
     'hits' => '0',
     'setting' => 'array (
@@ -424,7 +424,7 @@ return array (
     'description' => '',
     'parentdir' => 'group_information/',
     'catdir' => 'gonggaotonghan',
-    'url' => 'http://localhost/index.php?m=content&c=index&a=lists&catid=25',
+    'url' => 'http://www.ztcnwy.com/index.php?m=content&c=index&a=lists&catid=25',
     'items' => '0',
     'hits' => '0',
     'setting' => 'array (
@@ -475,7 +475,7 @@ return array (
     'description' => '我们的社区 COMMUNITY',
     'parentdir' => 'zhogntian_home/',
     'catdir' => 'shequhuodong',
-    'url' => 'http://localhost/index.php?m=content&c=index&a=lists&catid=26',
+    'url' => 'http://www.ztcnwy.com/index.php?m=content&c=index&a=lists&catid=26',
     'items' => '1',
     'hits' => '0',
     'setting' => 'array (
@@ -526,7 +526,7 @@ return array (
     'description' => '',
     'parentdir' => 'zhogntian_home/',
     'catdir' => 'quwenzuoshi',
-    'url' => 'http://localhost/index.php?m=content&c=index&a=lists&catid=27',
+    'url' => 'http://www.ztcnwy.com/index.php?m=content&c=index&a=lists&catid=27',
     'items' => '0',
     'hits' => '0',
     'setting' => 'array (
@@ -577,7 +577,7 @@ return array (
     'description' => '',
     'parentdir' => 'zhogntian_home/shequhuodong/',
     'catdir' => 'shequhuodonghuigu',
-    'url' => 'http://localhost/index.php?m=content&c=index&a=lists&catid=28',
+    'url' => 'http://www.ztcnwy.com/index.php?m=content&c=index&a=lists&catid=28',
     'items' => '0',
     'hits' => '0',
     'setting' => 'array (
@@ -628,7 +628,7 @@ return array (
     'description' => '',
     'parentdir' => 'zhogntian_home/shequhuodong/',
     'catdir' => 'shequhuodongyugao',
-    'url' => 'http://localhost/index.php?m=content&c=index&a=lists&catid=29',
+    'url' => 'http://www.ztcnwy.com/index.php?m=content&c=index&a=lists&catid=29',
     'items' => '0',
     'hits' => '0',
     'setting' => 'array (
@@ -679,7 +679,7 @@ return array (
     'description' => '',
     'parentdir' => '',
     'catdir' => 'index_image',
-    'url' => 'http://localhost/index.php?m=content&c=index&a=lists&catid=6',
+    'url' => 'http://www.ztcnwy.com/index.php?m=content&c=index&a=lists&catid=6',
     'items' => '3',
     'hits' => '0',
     'setting' => 'array (

@@ -5,7 +5,7 @@ return array (
     'siteid' => '1',
     'name' => '默认站点',
     'dirname' => '',
-    'domain' => 'http://localhost/',
+    'domain' => 'http://www.ztcnwy.com/',
     'site_title' => '中天城投物业公司',
     'keywords' => '中天城投、物业公司',
     'description' => '中天城投物业公司',
@@ -24,7 +24,7 @@ return array (
   \'watermark_pos\' => \'9\',
 )',
     'uuid' => '6b95a390-2489-11e6-b44a-507b9d229546',
-    'url' => 'http://localhost/',
+    'url' => 'http://www.ztcnwy.com/',
   ),
 );
 ?>

@@ -9,14 +9,13 @@ return array (
     'version' => '1.0',
     'description' => '',
     'setting' => 'array (
-  \'admin_email\' => \'phpcms@phpcms.cn\',
-  \'adminaccessip\' => \'0\',
+  \'admin_email\' => \'hustme@126.com\',
   \'maxloginfailedtimes\' => \'8\',
-  \'maxiplockedtime\' => \'15\',
   \'minrefreshtime\' => \'2\',
   \'mail_type\' => \'1\',
   \'mail_server\' => \'smtp.qq.com\',
   \'mail_port\' => \'25\',
+  \'category_ajax\' => \'0\',
   \'mail_user\' => \'phpcms.cn@foxmail.com\',
   \'mail_auth\' => \'1\',
   \'mail_from\' => \'phpcms.cn@foxmail.com\',
@@ -289,34 +288,6 @@ return array (
     'installdate' => '2010-09-01',
     'updatedate' => '2010-09-06',
   ),
-  'video' => 
-  array (
-    'module' => 'video',
-    'name' => '视频库',
-    'url' => '',
-    'iscore' => '0',
-    'version' => '1.0',
-    'description' => '',
-    'setting' => '',
-    'listorder' => '0',
-    'disabled' => '0',
-    'installdate' => '2012-09-28',
-    'updatedate' => '2012-09-28',
-  ),
-  'announce' => 
-  array (
-    'module' => 'announce',
-    'name' => '公告',
-    'url' => 'announce/',
-    'iscore' => '0',
-    'version' => '1.0',
-    'description' => '公告',
-    'setting' => '',
-    'listorder' => '0',
-    'disabled' => '0',
-    'installdate' => '2016-05-28',
-    'updatedate' => '2016-05-28',
-  ),
   'comment' => 
   array (
     'module' => 'comment',
@@ -331,50 +302,6 @@ return array (
     'installdate' => '2016-05-28',
     'updatedate' => '2016-05-28',
   ),
-  'link' => 
-  array (
-    'module' => 'link',
-    'name' => '友情链接',
-    'url' => '',
-    'iscore' => '0',
-    'version' => '1.0',
-    'description' => '',
-    'setting' => 'array (
-  1 => 
-  array (
-    \'is_post\' => \'1\',
-    \'enablecheckcode\' => \'0\',
-  ),
-)',
-    'listorder' => '0',
-    'disabled' => '0',
-    'installdate' => '2010-09-06',
-    'updatedate' => '2010-09-06',
-  ),
-  'vote' => 
-  array (
-    'module' => 'vote',
-    'name' => '投票',
-    'url' => '',
-    'iscore' => '0',
-    'version' => '1.0',
-    'description' => '',
-    'setting' => 'array (
-  1 => 
-  array (
-    \'default_style\' => \'default\',
-    \'vote_tp_template\' => \'vote_tp\',
-    \'allowguest\' => \'1\',
-    \'enabled\' => \'1\',
-    \'interval\' => \'1\',
-    \'credit\' => \'1\',
-  ),
-)',
-    'listorder' => '0',
-    'disabled' => '0',
-    'installdate' => '2010-09-06',
-    'updatedate' => '2010-09-06',
-  ),
   'message' => 
   array (
     'module' => 'message',
@@ -388,20 +315,6 @@ return array (
     'disabled' => '0',
     'installdate' => '2010-09-06',
     'updatedate' => '2010-09-06',
-  ),
-  'mood' => 
-  array (
-    'module' => 'mood',
-    'name' => '新闻心情',
-    'url' => 'mood/',
-    'iscore' => '0',
-    'version' => '1.0',
-    'description' => '新闻心情',
-    'setting' => '',
-    'listorder' => '0',
-    'disabled' => '0',
-    'installdate' => '2016-05-28',
-    'updatedate' => '2016-05-28',
   ),
   'poster' => 
   array (
@@ -463,34 +376,6 @@ return array (
     'disabled' => '0',
     'installdate' => '2011-05-18',
     'updatedate' => '2011-05-18',
-  ),
-  'tag' => 
-  array (
-    'module' => 'tag',
-    'name' => '标签向导',
-    'url' => 'tag/',
-    'iscore' => '0',
-    'version' => '1.0',
-    'description' => '标签向导',
-    'setting' => '',
-    'listorder' => '0',
-    'disabled' => '0',
-    'installdate' => '2016-05-28',
-    'updatedate' => '2016-05-28',
-  ),
-  'sms' => 
-  array (
-    'module' => 'sms',
-    'name' => '短信平台',
-    'url' => 'sms/',
-    'iscore' => '0',
-    'version' => '1.0',
-    'description' => '短信平台',
-    'setting' => '',
-    'listorder' => '0',
-    'disabled' => '0',
-    'installdate' => '2011-09-02',
-    'updatedate' => '2011-09-02',
   ),
 );
 ?>
