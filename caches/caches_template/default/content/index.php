@@ -1,46 +1,50 @@
 <?php defined('IN_PHPCMS') or exit('No permission resources.'); ?>
 
 <?php include template("content","header"); ?>
-<div class="banner">
-<div class="videoList-container" id="pcList" style="display:none;margin-bottom:0px;">
-<div id="slide-index">          
-	<div class="slides">
 
+ <link rel="stylesheet" href="statics/skippr/skippr.css">
+ <script src="statics/skippr/skippr.min.js"></script>
+ <script type="application/javascript">
+ 	$(function(){
+ 		 $("#theTarget").skippr({
+ 		 	transition: 'slide',
+            speed: 1000,
+            easing: 'easeOutQuart',
+            navType: 'block',
+            childrenElementType: 'div',
+            arrows: false,
+            autoPlay: true,
+            autoPlayDuration: 5000,
+            keyboardOnAlways: true,
+            hidePrevious: false
+ 		 });
+ 	});
+ </script>
+ <style>
+ 	#picture-container{
+ 		height: 300px;
+ 		width: 80%;
+ 		margin: 0 auto;
+ 	}
+ </style>
+ 
+ <div id="picture-container" >
+    <div id="theTarget">
+        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=2dcf7bba18ae22ab127e42a73653c087&action=lists&catid=6&order=listorder+DESC&num=3\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('catid'=>'6','order'=>'listorder DESC','limit'=>'3',));}?>
+   		<?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
+    		<div style="background-image: url(<?php echo $r['picture'];?>)"></div>
+		<?php $n++;}unset($n); ?>
+    <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+    </div>    
+</div>
 
-
-   <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=2dcf7bba18ae22ab127e42a73653c087&action=lists&catid=6&order=listorder+DESC&num=3\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('catid'=>'6','order'=>'listorder DESC','limit'=>'3',));}?>
-   <?php $j=0;?>
-   
-   <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
    	
-            <div class="slide autoMaxWidth" links=[{left:'30px',top:'81px'},{left:'30px',top:'244px'},{direction:'tb'}]>	  		
-                <div class="image" id='bi_0'>
-				
-                <img src="<?php echo thumb($r['picture'],1920,300);?>" alt="<?php echo $r['title'];?>" />
-                
-
-				</div>			
-                <div class="text" id='bt_<?php echo $j?>'></div>
-                <div class="button" id='bb_<?php echo $j?>'></div>
-            </div>
-   
-            <?php $j++; ?>
-			<?php $n++;}unset($n); ?>
-            <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
 	
 
 			
 			
-			
-	</div>
-	<div class="control">			
-		<a href="#"></a>	
-		<a href="#"></a>
-		<a href="#"></a>
-	</div>
-</div>			
-</div>
-</div>
+
+
 
 <div class="base channel-container">
 
@@ -300,8 +304,6 @@
 
 <?php include template("content","footer"); ?>
 
-
-<script src="/muban/Scripts/BannerChange.js" type="text/javascript"></script>
 
 
 </body>

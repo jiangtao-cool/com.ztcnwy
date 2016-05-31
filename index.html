@@ -56,64 +56,48 @@
 </div>
 <div class="clear"></div>
 
-<div class="banner">
-<div class="videoList-container" id="pcList" style="display:none;margin-bottom:0px;">
-<div id="slide-index">          
-	<div class="slides">
 
-
-
-         
-      	
-            <div class="slide autoMaxWidth" links=[{left:'30px',top:'81px'},{left:'30px',top:'244px'},{direction:'tb'}]>	  		
-                <div class="image" id='bi_0'>
-				
-                <img src="http://www.ztcnwy.com/uploadfile/2016/0531/20160531113318315.png" alt="3" />
-                
-
-				</div>			
-                <div class="text" id='bt_0'></div>
-                <div class="button" id='bb_0'></div>
-            </div>
-   
-            			   	
-            <div class="slide autoMaxWidth" links=[{left:'30px',top:'81px'},{left:'30px',top:'244px'},{direction:'tb'}]>	  		
-                <div class="image" id='bi_0'>
-				
-                <img src="http://www.ztcnwy.com/uploadfile/2016/0531/20160531113219280.png" alt="2" />
-                
-
-				</div>			
-                <div class="text" id='bt_1'></div>
-                <div class="button" id='bb_1'></div>
-            </div>
-   
-            			   	
-            <div class="slide autoMaxWidth" links=[{left:'30px',top:'81px'},{left:'30px',top:'244px'},{direction:'tb'}]>	  		
-                <div class="image" id='bi_0'>
-				
-                <img src="http://www.ztcnwy.com/uploadfile/2016/0531/20160531113733171.png" alt="1" />
-                
-
-				</div>			
-                <div class="text" id='bt_2'></div>
-                <div class="button" id='bb_2'></div>
-            </div>
-   
-            			            	
-
-			
-			
-			
-	</div>
-	<div class="control">			
-		<a href="#"></a>	
-		<a href="#"></a>
-		<a href="#"></a>
-	</div>
-</div>			
+ <link rel="stylesheet" href="statics/skippr/skippr.css">
+ <script src="statics/skippr/skippr.min.js"></script>
+ <script type="application/javascript">
+ 	$(function(){
+ 		 $("#theTarget").skippr({
+ 		 	transition: 'slide',
+            speed: 1000,
+            easing: 'easeOutQuart',
+            navType: 'block',
+            childrenElementType: 'div',
+            arrows: false,
+            autoPlay: true,
+            autoPlayDuration: 5000,
+            keyboardOnAlways: true,
+            hidePrevious: false
+ 		 });
+ 	});
+ </script>
+ <style>
+ 	#picture-container{
+ 		height: 300px;
+ 		width: 80%;
+ 		margin: 0 auto;
+ 	}
+ </style>
+ 
+ <div id="picture-container" >
+    <div id="theTarget">
+           		    		<div style="background-image: url(http://www.ztcnwy.com/uploadfile/2016/0531/20160531113318315.png)"></div>
+		    		<div style="background-image: url(http://www.ztcnwy.com/uploadfile/2016/0531/20160531113219280.png)"></div>
+		    		<div style="background-image: url(http://www.ztcnwy.com/uploadfile/2016/0531/20160531113733171.png)"></div>
+		        </div>    
 </div>
-</div>
+
+   	
+	
+
+			
+			
+
+
 
 <div class="base channel-container">
 
@@ -379,8 +363,6 @@
 	<span>Powered by 中天物业</span>
 </p>
 </div>
-
-<script src="/muban/Scripts/BannerChange.js" type="text/javascript"></script>
 
 
 </body>
