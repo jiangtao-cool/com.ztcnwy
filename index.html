@@ -8,6 +8,16 @@
 <meta name="description" content="中天城投物业公司">
 <link href="/muban/style/css.css" rel="stylesheet" type="text/css" />
 <script src="/muban/Scripts/jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#weixin').click(function(){
+			$(".weixin-code").fadeIn();
+		});
+		$('.weixin-code').click(function(){
+			$(".weixin-code").fadeOut();
+		});
+	})
+</script>
 </head>
 <body>
 <!--[if IE 6]>
@@ -29,8 +39,8 @@
 <img src="statics/images/ztct/phone.png" />
 <a href='#'>0851-86720668</a>
 <img src="statics/images/ztct/weixin.png" />
-<a href="#">关注我们</a>
-
+<a id="weixin" href="#">关注我们</a>
+<img class="weixin-code" src="statics/images/ztct/weixin-code.png" />
 </p>
 </div>
 <div class="nav">
@@ -59,7 +69,7 @@
 
  <link rel="stylesheet" href="statics/skippr/skippr.css">
  <script src="statics/skippr/skippr.min.js"></script>
- <script type="application/javascript">
+ <script type="text/javascript">
  	$(function(){
  		 $("#theTarget").skippr({
  		 	transition: 'slide',

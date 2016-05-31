@@ -7,6 +7,16 @@
 <meta name="description" content="<?php echo $SEO['description'];?>">
 <link href="/muban/style/css.css" rel="stylesheet" type="text/css" />
 <script src="/muban/Scripts/jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#weixin').click(function(){
+			$(".weixin-code").fadeIn();
+		});
+		$('.weixin-code').click(function(){
+			$(".weixin-code").fadeOut();
+		});
+	})
+</script>
 </head>
 <body>
 <!--[if IE 6]>
@@ -28,8 +38,8 @@
 <img src="statics/images/ztct/phone.png" />
 <a href='#'>0851-86720668</a>
 <img src="statics/images/ztct/weixin.png" />
-<a href="#">关注我们</a>
-
+<a id="weixin" href="#">关注我们</a>
+<img class="weixin-code" src="statics/images/ztct/weixin-code.png" />
 </p>
 </div>
 <div class="nav">
@@ -41,7 +51,7 @@
 <ul>
 
 
-    	<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=c8248b6e14f55ae7ab7445fed168915d&action=category&catid=0&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'0','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
+    	<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=c8248b6e14f55ae7ab7445fed168915d&action=category&catid=0&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'0','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
       		
 			<li><a href="/">首页</a></li>
 			<?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
