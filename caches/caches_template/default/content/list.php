@@ -52,7 +52,7 @@
 				</td>
 				
 				<td width="45%">
-					<img src="<?php echo $picture;?>"  height="100%" />
+					<img src="<?php echo $picture;?>"  height="276px" width="576px" />
 					
 				</td>
 			</tr>
