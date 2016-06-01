@@ -5,7 +5,7 @@
 <?php $url = preg_replace('/(&|\?)id=[^&]+/', '', $url)?>
 <?php if (isset($id)) $where="id=$id";?>
 
-<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=e5801d14b32e0c3536491a78f64d18de&action=lists&catid=%24catid&num=1&moreinfo=1&where=%24where&order=listorder\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('catid'=>$catid,'moreinfo'=>'1','where'=>$where,'order'=>'listorder','limit'=>'1',));}?>
+<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=e5801d14b32e0c3536491a78f64d18de&action=lists&catid=%24catid&num=1&moreinfo=1&where=%24where&order=listorder\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('catid'=>$catid,'moreinfo'=>'1','where'=>$where,'order'=>'listorder','limit'=>'1',));}?>
 	<?php $model = array_shift($data)?> 
 	<?php if (!isset($id))$id = $model[id]?>
 	<?php $content= $model[content]?>
@@ -27,7 +27,7 @@
 				<!-- menu -->
 				<td width="15%" class="menu">
 					<ul >
-					<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=87ee3d82845fb90305909e4efab1d5b7&action=lists&catid=%24catid&num=20\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('catid'=>$catid,'limit'=>'20',));}?> 
+					<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=87ee3d82845fb90305909e4efab1d5b7&action=lists&catid=%24catid&num=20\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('catid'=>$catid,'limit'=>'20',));}?> 
 						<?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
 							<li <?php if(($id==$r[id])) { ?> class="active" <?php } ?> >
 								<h2><a href="<?php echo $url;?>&id=<?php echo $r['id'];?>"><?php echo $r['title'];?></a></h2>
@@ -52,7 +52,7 @@
 				</td>
 				
 				<td width="45%">
-					<img src="<?php echo $picture;?>"  />
+					<img src="<?php echo $picture;?>"  width="400px" />
 					
 				</td>
 			</tr>
