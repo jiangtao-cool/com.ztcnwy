@@ -46,15 +46,6 @@ html,body{_height:100%;overflow-x:hidden;}
 }
 
 .banner{height:300px; width:100%; }
-#slide-index{min-width:1000px;width:auto; height:300px; overflow:hidden; position:relative;}
-#slide-index .slides{ min-width:1000px; width:auto; height:300px; }
-#slide-index .slide{ min-width:1000px; height:300px; float:left; position:relative; }
-#slide-index .image{ z-index:1;position:absolute; width:1920px; height:300px }
-#slide-index .text, #slide-index .button { z-index:2;position:absolute; top:-500px; }
-#slide-index .button{ display:none; width:138px;}
-#slide-index .control{ position:absolute; bottom:25px; left:440px; width:100%; text-align:center; height:4px; cursor:pointer; z-index:40; _overflow:hidden}
-#slide-index .control a{ width:30px; height:4px; cursor:pointer; display:inline-block; background:#eee; margin-right:6px;}
-#slide-index .control a:hover, #slide-index .control a.active{ background:#105808}
 .autoMaxWidth{ overflow:hidden; position:relative;height:232px; }
 
 .channel-container table {margin: 0 auto;}
@@ -96,36 +87,9 @@ html,body{_height:100%;overflow-x:hidden;}
 .insideR .page{text-align:center; margin:30px 0; clear:both}
 .insideR .page a{color:#484848}
 .insideR .page a:hover{color:#105808}
-.k_pagelist{clear:both; margin-top:30px; text-align:center}
-.k_pagelist a{color:#484848; margin:0 5px}
-.k_pagelist a:hover{color:#105808}
-.k_pagelist em{font-style:normal; margin-right:3px}
+
 /*inside*/
-.insideL{width:220px; float:left; overflow:hidden}
-.insideL .subnav{border:1px #ccc solid; background:url(../images/titleBg.png) repeat-x; overflow:hidden}
-.insideL h2,.subC h2,.insideR h2{height:35px; line-height:30px; color:#105808; font-size:14px; background:url(../images/h2Bg.png) no-repeat; text-indent:15px}
-.insideL .subnav ul{padding:0 10px; padding-bottom:5px}
-.insideL .subnav ul li{height:34px; line-height:34px; color:#484848; background:url(../images/newsIcon.png) left center no-repeat; text-indent:10px;}
-.insideL .subnav ul li span{font-family:arial; color:#AAA; font-size:9px; margin-left:10px}
-.insideL .subnav ul li a{width:196px; height:34px; display:block;border-bottom:1px #ccc dashed; color:#484848}
-.insideL .subnav ul li a:hover{border-bottom:1px #105808 dashed; color:#105808}
-.insideL .subC{margin-top:10px;border:1px #ccc solid; background:url(../images/titleBg.png) repeat-x; padding-bottom:10px; overflow:hidden}
-.insideL .subC p{padding:0 10px; color:#484848; line-height:26px}
-.insideL .subC p span{font-family:arial}
-.insideL .subnav h2 span,.insideL .subC h2 span,.insideR h2 span{font-family:arial; font-size:10px;color:#999; margin-left:8px; font-weight:normal}
-.insideR{width:760px; float:right;border:1px #ccc solid; background:url(../images/titleBg.png) repeat-x; overflow:hidden; min-height:563px; _height:563px}
-.insideR p{padding:0 15px; line-height:26px; color:#484848}
-.insideR ul.news{padding:5px 20px}
-.insideR ul.news li{height:34px; line-height:34px; color:#484848; background:url(../images/newsIcon.png) left center no-repeat; text-indent:10px;}
-.insideR ul.news li a{width:720px; height:34px;display:block;border-bottom:1px #ccc dashed; color:#484848}
-.insideR ul.news li a:hover{border-bottom:1px #105808 dashed; color:#105808}
-.insideR ul.news li span{float:right; color:#999; font-family:arial}
-.insideR ul.product{overflow:hidden}
-.insideR ul.product li{float:left; width:166px;height:222px;text-align:center;margin:0 12px;_display:inline;overflow:hidden; margin-top:10px}
-.insideR ul.product li img{width:160px; height:180px; padding:2px; border:1px #eee solid}
-.insideR ul.product li p{height:36px; width:166px; text-align:center; line-height:36px; color:#484848; text-indent:0; padding:0}
-.insideR ul.product li p a{color:#484848; }
-.insideR ul.product li p a:hover{color:#105808}
+
 .insideR h3{color:#105808; font-size:14px; text-align:center; line-height:30px}
 /*gbook*/
 .gbook{margin-left:20px; color:#484848; width:350px; font-family:microsoft yahei}
@@ -143,3 +107,13 @@ html,body{_height:100%;overflow-x:hidden;}
 .right {float:right}
 .date{font-size: 12px; color: #AAAAAA;}
 
+#pages { padding:14px 0 10px; font-family:ËÎÌå }
+#pages a { display:inline-block; height:22px; line-height:22px; background:#fff; border:1px solid #e3e3e3; text-align:center; color:#333; padding:0 10px}
+#pages a.a1 { background:url(../images/admin_img/pages.png) no-repeat 0 5px; width:56px; padding:0 }
+#pages a:hover { background:#f1f1f1; color:#000; text-decoration:none }
+#pages span { display:inline-block; height:22px; line-height:22px; background:#5a85b2; border:1px solid #5a85b2; color:#fff; text-align:center;padding:0 10px}
+.page .noPage { display:inline-block; width:56px; height:22px; line-height:22px; background:url(../img/icu/titleBg.png) repeat-x 0 -55px ; border:1px solid #e3e3e3; text-align:center; color:#a4a4a4; }
+
+.text-c {
+    text-align: center;
+}
