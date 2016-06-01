@@ -45,14 +45,14 @@
 					
 					<h2 class="color-main mt10"><?php echo $short_content;?></h2>
 					
-					<div class="border mt20 data-content">
+					<div class="text-border mt20 data-content">
 						<?php echo $content;?>
 					</div>
 					
 				</td>
 				
 				<td width="45%">
-					<img src="<?php echo $picture;?>"  width="400px" />
+					<img src="<?php echo $picture;?>"  height="100%" />
 					
 				</td>
 			</tr>
