@@ -47,31 +47,24 @@
 						{$current_cat[description]}
 					</h1>
 					
-					<table>
-						<tr>
-							{loop subcat($id)  $v} 
-								<td><h2><a href="{$url}&id={$v[catid]}">{$v[catname]}</a></h2></td>
-							{/loop}
-						</tr>
+						{loop subcat($id)  $v} 
+							<h2>{$v[catname]}</h2>
 						
-					</table>
+							{pc:content  action="lists" catid="$v[catid]" order="id DESC" num="4" moreinfo="1"}
+								<ul class="mt20">
+									 {loop $data $key $val}
+									 <li> 
+									 	{$val[video_code]}
+									 </li>
+									 {/loop}
+								 </ul>
+							 {/pc}
+							
+						
+						{/loop}
 		   					
 					
-					{pc:content  action="lists" catid="$id" order="id DESC" num="4" moreinfo="1"}
-					 <ul class="mt20">
-						 {loop $data $key $val}
-						 <li> 
-						 	<h3>{$val['title']} <em class="right">{date('Y-m-d',$val[inputtime])}</em> </h3>
-						 	<div class="img-content mt10">
-						 		<img src="{$val[thumb]}" />
-						 		<div class="text-border">
-						 		 {$val['content']}
-						 		</div>
-						 	</div>
-						 </li>
-						 {/loop}
-					 </ul>
-					 {/pc}
+					
 				</td>
 			</tr>
 			
