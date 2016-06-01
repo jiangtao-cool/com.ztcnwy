@@ -84,13 +84,7 @@ html,body{_height:100%;overflow-x:hidden;}
 .footer p{color:#fff; line-height:26px; text-align:center}
 .footer p a{color:#fff}
 .footer p span{font-family:arial}
-.insideR .page{text-align:center; margin:30px 0; clear:both}
-.insideR .page a{color:#484848}
-.insideR .page a:hover{color:#105808}
 
-/*inside*/
-
-.insideR h3{color:#105808; font-size:14px; text-align:center; line-height:30px}
 /*gbook*/
 .gbook{margin-left:20px; color:#484848; width:350px; font-family:microsoft yahei}
 .gbook td{height:36px; text-align:left; padding:5px 0}

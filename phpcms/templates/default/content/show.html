@@ -1,19 +1,19 @@
 {template "content","header"}
 
+<link rel="stylesheet" href="/muban/style/show.css" />
+<div class="base" >
 
-<div class="base mt10" id="here">
+<div class="main">
 
-<div class="inside">
-<h2>{php var_dump($CATEGORYS[$catid])}</h2>
+<h1 class="title">{$title}</h1>      
+<hr>
+<h6 class="inputtime">发布时间: {date('Y-m-d', $inputtime)}</h6>
 
-<h3>{$title}</h3>      
-<p>
-
-
+<div class="content">
 {$content}
+</div>
 
-</p>
-<p class="page">上一页：<span id="k_nextpage"><a href="{$previous_page[url]}">{$previous_page[title]}</a></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下一页：<span id="k_lastpage"><a href="{$next_page[url]}">{$next_page[title]}</a></span></p>
+
 </div>
 </div>
 
@@ -22,18 +22,6 @@
 
 
 
-<script type="text/javascript" src="/muban/Scripts/Xslider.js"></script>
-<script src="/muban/Scripts/BannerChange.js" type="text/javascript"></script>
-<script type="text/javascript">
-$(function(){
-	$(".productshow").Xslider({
-		unitdisplayed:1,
-		numtoMove:1,
-		loop:"cycle",
-		autoscroll:2000 
-	});
-	
-})
- </script>
+
  </body>
 </html>
