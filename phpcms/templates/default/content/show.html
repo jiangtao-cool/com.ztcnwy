@@ -2,24 +2,7 @@
 
 
 <div class="base mt10" id="here">
-<div class="insideL">
-        <div class="subnav">
-        <h2>快速导航</h2>
-        <ul>
-    	{pc:content action="category" catid="0" num="7" siteid="$siteid" order="listorder ASC"}
-      
 
-			{loop $data $r}
-			<li><a href="{$r[url]}">{$r[catname]}</a></li>
-			{/loop}
-
-        {/pc}
-        </ul>
-        </div>
-        <div class="subC">
-{show_ad(1, 11)}
-        </div>
-</div>
 <div class="insideR">
 <h2>{$CATEGORYS[$catid][catname]}</h2>
 

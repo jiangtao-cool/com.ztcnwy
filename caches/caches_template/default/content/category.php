@@ -29,6 +29,9 @@
 	.data-list li>h3{
 		margin: 10px 0 10px 0;
 	}
+	.data-list a {
+		color: black;
+	}
 	
 	.data-list table{width: 100%;}	
 	.data-img {
@@ -80,12 +83,11 @@
 					</h1>
 					
 						
-					<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=2ce97bbadd157c53adf9574417b61365&action=lists&catid=%24id&order=id+DESC&num=4&moreinfo=1\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('catid'=>$id,'order'=>'id DESC','moreinfo'=>'1','limit'=>'4',));}?>
+					<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=66b0411f0395411ac053fbcd08215df4&action=lists&catid=%24id&order=id+DESC&num=4&moreinfo=1&page=%24page\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$pagesize = 4;$page = intval($page) ? intval($page) : 1;if($page<=0){$page=1;}$offset = ($page - 1) * $pagesize;$content_total = $content_tag->count(array('catid'=>$id,'order'=>'id DESC','moreinfo'=>'1','limit'=>$offset.",".$pagesize,'action'=>'lists',));$pages = pages($content_total, $page, $pagesize, $urlrule);$data = $content_tag->lists(array('catid'=>$id,'order'=>'id DESC','moreinfo'=>'1','limit'=>$offset.",".$pagesize,'action'=>'lists',));}?>
 						<ul class="mt20 data-list" >
 							 <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
 							 <li > 
-							 	<h3><?php echo $r['title'];?> &nbsp;&nbsp;&nbsp;<span class="date"><?php echo date("Y-m-d", $r[inputtime]);?></span></h3>
-							 	
+							 	<h3><a href="<?php echo $r['url'];?>"><?php echo $r['title'];?></a> &nbsp;&nbsp;&nbsp;<span class="date"><?php echo date("Y-m-d", $r[inputtime]);?></span></h3>
 							 	<table>
 							 		<tr>
 							 			<td class="data-img"><img src="<?php echo $r['thumb'];?>"/></td>
