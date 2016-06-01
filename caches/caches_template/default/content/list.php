@@ -45,7 +45,7 @@
 					
 					<h2 class="color-main mt10"><?php echo $short_content;?></h2>
 					
-					<div class="text-border mt20 data-content">
+					<div class="mt20 data-content">
 						<?php echo $content;?>
 					</div>
 					

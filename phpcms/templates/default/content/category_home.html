@@ -20,6 +20,22 @@
 		margin-left: 4%;
 		vertical-align: top;
 	}
+	.data-list li {
+		background: #DCDCDC;
+		display: inline-block;
+		padding: 0;
+		
+		width: 200px;
+	}
+	
+	.data-list li>img {
+		width: 100%;
+		height: 200px;
+	}
+	
+	.data-list li>div {
+		padding: 10px;
+	}
 	
 </style>
 <!--left menu-->
@@ -48,13 +64,15 @@
 					</h1>
 					
 						{loop subcat($id)  $v} 
-							<h2>{$v[catname]}</h2>
+							<h2 class="title mt10">{$v[catname]}</h2>
 						
 							{pc:content  action="lists" catid="$v[catid]" order="id DESC" num="4" moreinfo="1"}
-								<ul class="mt20">
-									 {loop $data $key $val}
+								<ul class="mt20 data-list">
+									 {loop $data $r}
 									 <li> 
-									 	{$val[video_code]}
+									 	<img src="{$r[thumb]}"/>
+									 	<br>
+									 	<div>{$r[description]}</div>
 									 </li>
 									 {/loop}
 								 </ul>
