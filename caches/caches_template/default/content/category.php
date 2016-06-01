@@ -42,7 +42,7 @@
 							 	<h3><a href="<?php echo $r['url'];?>"><?php echo $r['title'];?></a> &nbsp;&nbsp;&nbsp;<span class="date"><?php echo date("Y-m-d", $r[inputtime]);?></span></h3>
 							 	<table>
 							 		<tr>
-							 			<td class="data-img"><img src="<?php echo $r['thumb'];?>"/></td>
+							 			<td class="data-img"><img src="<?php echo $r['picture'];?>"/></td>
 							 			<td class="data-content2"><div class="text-border"><?php echo $r['description'];?></div></td>
 							 		</tr>
 							 	</table>

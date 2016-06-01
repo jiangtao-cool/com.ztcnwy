@@ -49,13 +49,15 @@
 	<div class="shadow">
 	</div>
 <ul>
-
+{php $parentid = $CATEGORYS[$_GET['catid']]['parentid']}
 
     	{pc:content action="category" catid="0" num="7" siteid="$siteid" order="listorder ASC"}
       		
 			<li><a href="/">首页</a></li>
 			{loop $data $r}
-			<li  ><a {if ($_GET['catid'] == $r[catid])} class="color-main" {/if} href="{$r[url]}">{$r[catname]}</a></li>
+			
+			<li  >
+				<a {if ($_GET['catid'] == $r[catid] || $parentid == $r[catid])} class="color-main" {/if} href="{$r[url]}">{$r[catname]}</a></li>
 			{/loop}
 
         {/pc}

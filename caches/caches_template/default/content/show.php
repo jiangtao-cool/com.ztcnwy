@@ -3,8 +3,7 @@
 
 <div class="base mt10" id="here">
 
-<div class="insideR">
-<h2><?php echo $CATEGORYS[$catid]['catname'];?></h2>
+<div class="inside">
 
 <h3><?php echo $title;?></h3>      
 <p>
