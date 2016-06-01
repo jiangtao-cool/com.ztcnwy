@@ -17,7 +17,7 @@ return array (
     'parentdir' => '',
     'catdir' => 'about_us',
     'url' => 'http://www.ztcnwy.com/index.php?m=content&c=index&a=lists&catid=9',
-    'items' => '2',
+    'items' => '4',
     'hits' => '0',
     'setting' => 'array (
   \'workflowid\' => \'\',
@@ -229,7 +229,7 @@ return array (
   \'content_ishtml\' => \'0\',
   \'create_to_html_root\' => \'0\',
   \'template_list\' => \'default\',
-  \'category_template\' => \'category_home\',
+  \'category_template\' => \'category\',
   \'list_template\' => \'list_community\',
   \'show_template\' => \'show\',
   \'meta_title\' => \'\',

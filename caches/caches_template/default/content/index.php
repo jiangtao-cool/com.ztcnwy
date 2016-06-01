@@ -30,7 +30,7 @@
  
  <div id="picture-container" >
     <div id="theTarget">
-        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=2dcf7bba18ae22ab127e42a73653c087&action=lists&catid=6&order=listorder+DESC&num=3\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('catid'=>'6','order'=>'listorder DESC','limit'=>'3',));}?>
+        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=9df1a606f0930b028bd747ca67e15595&action=lists&catid=6&order=listorder+DESC&num=10\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('catid'=>'6','order'=>'listorder DESC','limit'=>'10',));}?>
    		<?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
     		<div style="background-image: url(<?php echo $r['picture'];?>)"></div>
 		<?php $n++;}unset($n); ?>

@@ -38,23 +38,22 @@
 				</td>
 				
 				<!-- content -->
-				<td width="35%">
-					<h1><span class="color-main-strong"><?php echo $English_title_arr['0'];?></span> <span class="color-main"><?php echo $English_title_arr['1'];?></span> </h1><br>
-					
-					<h1 class="title color-main"><?php echo $title;?></h1>
-					
-					<h2 class="color-main mt10"><?php echo $short_content;?></h2>
-					
-					<div class="mt20 data-content">
-						<?php echo $content;?>
+				<td width="85%">
+					<img src="<?php echo $picture;?>" class="data-img" />
+					<div class="data-content">
+						
+								<?php echo $content;?>
 					</div>
+					
+					
+					
+					
+					
 					
 				</td>
 				
-				<td width="45%">
-					<img src="<?php echo $picture;?>"  height="276px" width="576px" />
 					
-				</td>
+					
 			</tr>
 			
 			
