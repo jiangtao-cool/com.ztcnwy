@@ -3,22 +3,41 @@
 <?php $id = $_GET[id];?>
 <?php $url = $_SERVER['REQUEST_URI'];?>
 <?php $url = preg_replace('/(&|\?)id=[^&]+/', '', $url)?>
-<?php if (isset($id)) $where="id=$id";?>
-
-<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=e5801d14b32e0c3536491a78f64d18de&action=lists&catid=%24catid&num=1&moreinfo=1&where=%24where&order=listorder\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('catid'=>$catid,'moreinfo'=>'1','where'=>$where,'order'=>'listorder','limit'=>'1',));}?>
-	<?php $model = array_shift($data)?> 
-	<?php if (!isset($id))$id = $model[id]?>
-	<?php $content= $model[content]?>
-	<?php $English_title= $model[English_title]?>
-	<?php $English_title_arr = explode(' ', $English_title)?>
-	<?php $short_content= $model[short_content]?>
-	<?php $picture= $model[picture]?>
-	<?php $title = $model[title]?>
-<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
 
 
 
-<link rel="stylesheet" href="/muban/style/list.css" />
+<link rel="stylesheet" href="muban/style/list.css" />
+<style>
+	.img-content {
+		
+	}
+	.img-content>img{
+		width: 15%;
+	}
+	.img-content>div{
+		display: inline-block;
+		width: 77%;
+		margin-left: 4%;
+		vertical-align: top;
+	}
+	.data-list li {
+		background: #DCDCDC;
+		display: inline-block;
+		padding: 0;
+		
+		width: 200px;
+	}
+	
+	.data-list li>img {
+		width: 100%;
+		height: 200px;
+	}
+	
+	.data-list li>div {
+		padding: 10px;
+	}
+	
+</style>
 <!--left menu-->
 <div class="base">
 	<div class="content">
@@ -26,27 +45,45 @@
 			<tr>
 				<!-- menu -->
 				<td width="15%" class="menu">
-					<ul >
-					<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=87ee3d82845fb90305909e4efab1d5b7&action=lists&catid=%24catid&num=20\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('catid'=>$catid,'limit'=>'20',));}?> 
-						<?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
-							<li <?php if(($id==$r[id])) { ?> class="active" <?php } ?> >
-								<h2><a href="<?php echo $url;?>&id=<?php echo $r['id'];?>"><?php echo $r['title'];?></a></h2>
-							</li>
-						<?php $n++;}unset($n); ?> 
-					<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
-					</ul>
+					<ul>
+			   			<?php $n=1;if(is_array(subcat($catid))) foreach(subcat($catid) AS $v) { ?> 
+			   				<?php if (!isset($id)) $id=$v[catid]?>
+			   				<?php if ($id == $v[catid]) $current_cat = $v?>
+			   			
+			   				<li <?php if(($id==$v[catid])) { ?> class="active" <?php } ?>  >
+			   					<h2><a href="<?php echo $url;?>&id=<?php echo $v['catid'];?>"><?php echo $v['catname'];?></a></h2>
+			   				</li>
+						<?php $n++;}unset($n); ?>
+			   		</ul>
 				</td>
 				
-				<!-- content -->
+				
 				<td>
-					<h1 class="title color-main border-bottom"><?php echo $title;?> &nbsp;&nbsp;&nbsp;
-						<span class="color-main-strong"><?php echo $English_title_arr['0'];?></span> 
-						<span class="color-main"><?php echo $English_title_arr['1'];?></span>
+					<h1 class="title color-main border-bottom">
+						<?php echo $current_cat['description'];?>
 					</h1>
 					
-					<img class="mt10" src="<?php echo $picture;?>" style="width: 100%;" />
+						<?php $n=1;if(is_array(subcat($id))) foreach(subcat($id) AS $v) { ?> 
+							<h2 class="title mt10"><?php echo $v['catname'];?></h2>
+						
+							<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=8636a70f9711280bfde315f5e325c9a8&action=lists&catid=%24v%5Bcatid%5D&order=id+DESC&num=4&moreinfo=1\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('catid'=>$v[catid],'order'=>'id DESC','moreinfo'=>'1','limit'=>'4',));}?>
+								<ul class="mt20 data-list">
+									 <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
+									 <li> 
+									 	<img src="<?php echo $r['thumb'];?>"/>
+									 	<br>
+									 	<div><?php echo $r['description'];?></div>
+									 </li>
+									 <?php $n++;}unset($n); ?>
+								 </ul>
+							 <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+							
+						
+						<?php $n++;}unset($n); ?>
+		   					
+					
+					
 				</td>
-				
 			</tr>
 			
 			
