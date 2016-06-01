@@ -12,12 +12,6 @@ return array (
     'name' => '图片',
     'sort' => '0',
   ),
-  15 => 
-  array (
-    'typeid' => '56',
-    'name' => '视频',
-    'sort' => '0',
-  ),
   1 => 
   array (
     'typeid' => '1',

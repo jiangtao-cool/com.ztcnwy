@@ -21,21 +21,37 @@
 		vertical-align: top;
 	}
 	.data-list li {
-		background: #DCDCDC;
 		display: inline-block;
 		padding: 0;
-		
-		width: 200px;
+		width: 45%;
+		height: 110px;
+	}
+	.data-list li>h3{
+		margin: 10px 0 10px 0;
 	}
 	
-	.data-list li>img {
+	.data-list table{width: 100%;}	
+	.data-img {
+		width: 20%;
+	}
+	.data-img img{
 		width: 100%;
-		height: 200px;
+	}
+	.data-content2 {
+		margin-top: 0;
+		padding: 0;
+		vertical-align: top;
+		width: 75%;
+		
+	}
+	.data-content2>div{
+		padding: 5px;
+		vertical-align: top;
+		height: 100%;
+		display: inline-block;
+		width: 80%;
 	}
 	
-	.data-list li>div {
-		padding: 10px;
-	}
 	
 </style>
 <!--left menu-->
@@ -63,23 +79,25 @@
 						<?php echo $current_cat['description'];?>
 					</h1>
 					
-						<?php $n=1;if(is_array(subcat($id))) foreach(subcat($id) AS $v) { ?> 
-							<h2 class="title mt10"><?php echo $v['catname'];?></h2>
 						
-							<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=8636a70f9711280bfde315f5e325c9a8&action=lists&catid=%24v%5Bcatid%5D&order=id+DESC&num=4&moreinfo=1\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('catid'=>$v[catid],'order'=>'id DESC','moreinfo'=>'1','limit'=>'4',));}?>
-								<ul class="mt20 data-list">
-									 <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
-									 <li> 
-									 	<img src="<?php echo $r['thumb'];?>"/>
-									 	<br>
-									 	<div><?php echo $r['description'];?></div>
-									 </li>
-									 <?php $n++;}unset($n); ?>
-								 </ul>
-							 <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+					<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=2ce97bbadd157c53adf9574417b61365&action=lists&catid=%24id&order=id+DESC&num=4&moreinfo=1\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('catid'=>$id,'order'=>'id DESC','moreinfo'=>'1','limit'=>'4',));}?>
+						<ul class="mt20 data-list" >
+							 <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
+							 <li > 
+							 	<h3><?php echo $r['title'];?> &nbsp;&nbsp;&nbsp;<span class="date"><?php echo date("Y-m-d", $r[inputtime]);?></span></h3>
+							 	
+							 	<table>
+							 		<tr>
+							 			<td class="data-img"><img src="<?php echo $r['thumb'];?>"/></td>
+							 			<td class="data-content2"><div class="text-border"><?php echo $r['description'];?></div></td>
+							 		</tr>
+							 	</table>
+							 </li>
+							 <?php $n++;}unset($n); ?>
+						 </ul>
+					 <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
 							
 						
-						<?php $n++;}unset($n); ?>
 		   					
 					
 					

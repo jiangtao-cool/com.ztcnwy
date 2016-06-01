@@ -21,21 +21,37 @@
 		vertical-align: top;
 	}
 	.data-list li {
-		background: #DCDCDC;
 		display: inline-block;
 		padding: 0;
-		
-		width: 200px;
+		width: 45%;
+		height: 110px;
+	}
+	.data-list li>h3{
+		margin: 10px 0 10px 0;
 	}
 	
-	.data-list li>img {
+	.data-list table{width: 100%;}	
+	.data-img {
+		width: 20%;
+	}
+	.data-img img{
 		width: 100%;
-		height: 200px;
+	}
+	.data-content2 {
+		margin-top: 0;
+		padding: 0;
+		vertical-align: top;
+		width: 75%;
+		
+	}
+	.data-content2>div{
+		padding: 5px;
+		vertical-align: top;
+		height: 100%;
+		display: inline-block;
+		width: 80%;
 	}
 	
-	.data-list li>div {
-		padding: 10px;
-	}
 	
 </style>
 <!--left menu-->
@@ -63,23 +79,25 @@
 						{$current_cat[description]}
 					</h1>
 					
-						{loop subcat($id)  $v} 
-							<h2 class="title mt10">{$v[catname]}</h2>
 						
-							{pc:content  action="lists" catid="$v[catid]" order="id DESC" num="4" moreinfo="1"}
-								<ul class="mt20 data-list">
-									 {loop $data $r}
-									 <li> 
-									 	<img src="{$r[thumb]}"/>
-									 	<br>
-									 	<div>{$r[description]}</div>
-									 </li>
-									 {/loop}
-								 </ul>
-							 {/pc}
+					{pc:content  action="lists" catid="$id" order="id DESC" num="4" moreinfo="1"}
+						<ul class="mt20 data-list" >
+							 {loop $data $r}
+							 <li > 
+							 	<h3>{$r[title]} &nbsp;&nbsp;&nbsp;<span class="date">{date("Y-m-d", $r[inputtime])}</span></h3>
+							 	
+							 	<table>
+							 		<tr>
+							 			<td class="data-img"><img src="{$r[thumb]}"/></td>
+							 			<td class="data-content2"><div class="text-border">{$r[description]}</div></td>
+							 		</tr>
+							 	</table>
+							 </li>
+							 {/loop}
+						 </ul>
+					 {/pc}
 							
 						
-						{/loop}
 		   					
 					
 					
