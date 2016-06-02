@@ -118,3 +118,6 @@
 <?php exit;?>06-02 11:59:59 | 2 | mysql_errno() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 392
 <?php exit;?>06-02 11:59:59 | 2 | mysql_errno() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 392
 <?php exit;?>06-02 11:59:59 | 2 | mysql_error() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 388
+<?php exit;?>06-02 13:38:03 | 2 | date() expects parameter 2 to be long, string given | caches\caches_template\default\content\show.php | 10
+<?php exit;?>06-02 15:19:09 | 2 | extract() expects parameter 1 to be array, null given | phpcms\modules\content\classes\html.class.php | 182
+<?php exit;?>06-02 15:20:23 | 2 | Missing argument 2 for category::delete_child(), called in C:\WWW\phpcms\modules\admin\category.php on line 347 and defined | phpcms\modules\admin\category.php | 342

@@ -71,7 +71,9 @@
 							<span class="more">more&raquo;</span>
 						</h3>
 						<div class="content img">
+							<a href="index.php?m=content&c=index&a=lists&catid=10">
 							<img src="statics/images/ztct/1-1-1.png" />
+							</a>
 						</div>
 					</div>
 					
@@ -277,8 +279,17 @@
 								<?php $v = array_shift($data)?>
 								<?php echo $v[content]?>
 							<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
-									
 						</div>
+					</div>
+					
+					<div class="p" style="margin-top: 10px;;">
+						<ul class="content text-border" style="height: 96px;">
+			                <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=776e4592542e721d2ee0f5209bbadacd&action=lists&catid=35&num=3&order=id+DESC&return=info\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$info = $content_tag->lists(array('catid'=>'35','order'=>'id DESC','limit'=>'3',));}?>
+				                <?php $n=1;if(is_array($info)) foreach($info AS $v) { ?>
+								<li><span><?php echo date('Y-m-d',$v[updatetime]);?></span><a href="<?php echo $v['url'];?>" target="_blank" ><?php echo str_cut($v['title'],30);?></a></li>
+				                <?php $n++;}unset($n); ?>
+			                <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+						</ul>
 					</div>
 				</div>
 			</div>
