@@ -76,3 +76,45 @@
 ) | phpcms\libs\classes\http.class.php | 84
 <?php exit;?>05-31 13:04:13 | 2 | Missing argument 2 for category::delete_child(), called in D:\MyProgram\phpStudy\WWW\phpcms\modules\admin\category.php on line 347 and defined | phpcms\modules\admin\category.php | 342
 <?php exit;?>06-02 09:22:09 | 2 | extract() expects parameter 1 to be array, null given | phpcms\modules\content\classes\html.class.php | 182
+<?php exit;?>06-02 11:59:55 | 2 | mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: php_network_getaddresses: getaddrinfo failed: 不知道这样的主机。  | phpcms\libs\classes\mysql.class.php | 56
+<?php exit;?>06-02 11:59:55 | 2 | mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] php_network_getaddresses: getaddrinfo failed: 不知道这样的主机。  (trying to connect via tcp://127.0.0:3306) | phpcms\libs\classes\mysql.class.php | 56
+<?php exit;?>06-02 11:59:55 | 2 | mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: php_network_getaddresses: getaddrinfo failed: 不知道这样的主机。  | phpcms\libs\classes\mysql.class.php | 56
+<?php exit;?>06-02 11:59:55 | 2 | mysql_error() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 388
+<?php exit;?>06-02 11:59:55 | 2 | mysql_errno() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 392
+<?php exit;?>06-02 11:59:55 | 2 | mysql_errno() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 392
+<?php exit;?>06-02 11:59:55 | 2 | mysql_error() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 388
+<?php exit;?>06-02 11:59:55 | 2 | mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: php_network_getaddresses: getaddrinfo failed: 不知道这样的主机。  | phpcms\libs\classes\mysql.class.php | 56
+<?php exit;?>06-02 11:59:55 | 2 | mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] php_network_getaddresses: getaddrinfo failed: 不知道这样的主机。  (trying to connect via tcp://127.0.0:3306) | phpcms\libs\classes\mysql.class.php | 56
+<?php exit;?>06-02 11:59:55 | 2 | mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: php_network_getaddresses: getaddrinfo failed: 不知道这样的主机。  | phpcms\libs\classes\mysql.class.php | 56
+<?php exit;?>06-02 11:59:55 | 2 | mysql_error() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 388
+<?php exit;?>06-02 11:59:55 | 2 | mysql_errno() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 392
+<?php exit;?>06-02 11:59:55 | 2 | mysql_errno() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 392
+<?php exit;?>06-02 11:59:55 | 2 | mysql_error() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 388
+<?php exit;?>06-02 11:59:57 | 2 | mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: php_network_getaddresses: getaddrinfo failed: 不知道这样的主机。  | phpcms\libs\classes\mysql.class.php | 56
+<?php exit;?>06-02 11:59:57 | 2 | mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] php_network_getaddresses: getaddrinfo failed: 不知道这样的主机。  (trying to connect via tcp://127.0.0:3306) | phpcms\libs\classes\mysql.class.php | 56
+<?php exit;?>06-02 11:59:57 | 2 | mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: php_network_getaddresses: getaddrinfo failed: 不知道这样的主机。  | phpcms\libs\classes\mysql.class.php | 56
+<?php exit;?>06-02 11:59:57 | 2 | mysql_error() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 388
+<?php exit;?>06-02 11:59:57 | 2 | mysql_errno() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 392
+<?php exit;?>06-02 11:59:57 | 2 | mysql_errno() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 392
+<?php exit;?>06-02 11:59:57 | 2 | mysql_error() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 388
+<?php exit;?>06-02 11:59:55 | 2 | mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: php_network_getaddresses: getaddrinfo failed: 不知道这样的主机。  | phpcms\libs\classes\mysql.class.php | 56
+<?php exit;?>06-02 11:59:55 | 2 | mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] php_network_getaddresses: getaddrinfo failed: 不知道这样的主机。  (trying to connect via tcp://127.0.0:3306) | phpcms\libs\classes\mysql.class.php | 56
+<?php exit;?>06-02 11:59:55 | 2 | mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: php_network_getaddresses: getaddrinfo failed: 不知道这样的主机。  | phpcms\libs\classes\mysql.class.php | 56
+<?php exit;?>06-02 11:59:55 | 2 | mysql_error() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 388
+<?php exit;?>06-02 11:59:55 | 2 | mysql_errno() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 392
+<?php exit;?>06-02 11:59:55 | 2 | mysql_errno() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 392
+<?php exit;?>06-02 11:59:55 | 2 | mysql_error() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 388
+<?php exit;?>06-02 11:59:59 | 2 | mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: php_network_getaddresses: getaddrinfo failed: 不知道这样的主机。  | phpcms\libs\classes\mysql.class.php | 56
+<?php exit;?>06-02 11:59:59 | 2 | mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] php_network_getaddresses: getaddrinfo failed: 不知道这样的主机。  (trying to connect via tcp://127.0.0:3306) | phpcms\libs\classes\mysql.class.php | 56
+<?php exit;?>06-02 11:59:59 | 2 | mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: php_network_getaddresses: getaddrinfo failed: 不知道这样的主机。  | phpcms\libs\classes\mysql.class.php | 56
+<?php exit;?>06-02 11:59:59 | 2 | mysql_error() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 388
+<?php exit;?>06-02 11:59:59 | 2 | mysql_errno() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 392
+<?php exit;?>06-02 11:59:59 | 2 | mysql_errno() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 392
+<?php exit;?>06-02 11:59:59 | 2 | mysql_error() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 388
+<?php exit;?>06-02 11:59:59 | 2 | mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: php_network_getaddresses: getaddrinfo failed: 不知道这样的主机。  | phpcms\libs\classes\mysql.class.php | 56
+<?php exit;?>06-02 11:59:59 | 2 | mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] php_network_getaddresses: getaddrinfo failed: 不知道这样的主机。  (trying to connect via tcp://127.0.0:3306) | phpcms\libs\classes\mysql.class.php | 56
+<?php exit;?>06-02 11:59:59 | 2 | mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: php_network_getaddresses: getaddrinfo failed: 不知道这样的主机。  | phpcms\libs\classes\mysql.class.php | 56
+<?php exit;?>06-02 11:59:59 | 2 | mysql_error() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 388
+<?php exit;?>06-02 11:59:59 | 2 | mysql_errno() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 392
+<?php exit;?>06-02 11:59:59 | 2 | mysql_errno() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 392
+<?php exit;?>06-02 11:59:59 | 2 | mysql_error() expects parameter 1 to be resource, boolean given | phpcms\libs\classes\mysql.class.php | 388
