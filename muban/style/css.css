@@ -18,11 +18,7 @@ html,body{_height:100%;overflow-x:hidden;}
 .base{width:100%; margin:0 auto; overflow:hidden; }
 .base>.content{width: 70%; margin: 0 auto; }
 .mt10{margin-top:10px}
-.channel-container {
-	width: 70%;
-	margin: auto;
-	margin-top: 50px;
-}
+
 
 .top {margin-top: 10px; padding-bottom: 3px;border-bottom: #a9a9a9 2px solid;}
 .top p{color:#999; height:20px; line-height:20px; text-align:right; padding-right:10px; margin-right: 200px;}
@@ -48,6 +44,11 @@ html,body{_height:100%;overflow-x:hidden;}
 .banner{height:300px; width:100%; }
 .autoMaxWidth{ overflow:hidden; position:relative;height:232px; }
 
+.channel-container {
+	width: 90%;
+	margin: auto;
+	margin-top: 50px;
+}
 .channel-container table {width: 80%; margin: 0 auto;}
 .channel-container td {width:33%;vertical-align: top;}
 
