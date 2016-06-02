@@ -48,8 +48,8 @@ html,body{_height:100%;overflow-x:hidden;}
 .banner{height:300px; width:100%; }
 .autoMaxWidth{ overflow:hidden; position:relative;height:232px; }
 
-.channel-container table {margin: 0 auto;}
-.channel-container td {vertical-align: top;}
+.channel-container table {width: 80%; margin: 0 auto;}
+.channel-container td {width:33%;vertical-align: top;}
 
 .channel{width:277px; float:left; margin-left:30px; display:inline;}
 
@@ -80,6 +80,8 @@ html,body{_height:100%;overflow-x:hidden;}
 .channel h2 .border {position: absolute; bottom: 0;left: 20px;width: 255px; height: 7px; background: url(../../statics/images/ztct/channel-border.png) repeat-x bottom;}
 
 .channel-hr {color: #c0c0c0; width: 70%; margin-top: 50px; margin-bottom: 50px;}
+
+
 
 .footer{height:65px; background:#ff7d13; margin-top:20px; padding-top:15px}
 .footer p{color:#fff; line-height:26px; text-align:center}
