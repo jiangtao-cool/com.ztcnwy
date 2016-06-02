@@ -75,3 +75,4 @@
 <?php exit;?>05-31 13:02:58 | 2 | fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to juhe.gcvideo.cn:80 (由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
 ) | phpcms\libs\classes\http.class.php | 84
 <?php exit;?>05-31 13:04:13 | 2 | Missing argument 2 for category::delete_child(), called in D:\MyProgram\phpStudy\WWW\phpcms\modules\admin\category.php on line 347 and defined | phpcms\modules\admin\category.php | 342
+<?php exit;?>06-02 09:22:09 | 2 | extract() expects parameter 1 to be array, null given | phpcms\modules\content\classes\html.class.php | 182

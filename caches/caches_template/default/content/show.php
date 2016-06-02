@@ -7,7 +7,7 @@
 
 <h1 class="title"><?php echo $title;?></h1>      
 <hr>
-<h6 class="inputtime">发布时间: <?php echo date('Y-m-d', $inputtime);?></h6>
+<h6 class="inputtime">发布时间: <?php echo date('Y-m-d',$updatetime);?>}</h6>
 
 <div class="content">
 <?php echo $content;?>

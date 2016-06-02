@@ -218,7 +218,7 @@
 							<span>公告通函</span>
 						</h3>
 						<ul class="content text-border" style="height: 86px;">
-			                <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=47d362aaacde3c4b70338da97af2003a&action=lists&catid=6&num=7&order=id+DESC&return=info\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$info = $content_tag->lists(array('catid'=>'6','order'=>'id DESC','limit'=>'7',));}?>
+			                <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=c31f2b9caa190d78028f930d4eb6ba97&action=lists&catid=25&num=3&order=id+DESC&return=info\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$info = $content_tag->lists(array('catid'=>'25','order'=>'id DESC','limit'=>'3',));}?>
 				                <?php $n=1;if(is_array($info)) foreach($info AS $v) { ?>
 								<li><span><?php echo date('Y-m-d',$v[updatetime]);?></span><a href="<?php echo $v['url'];?>" target="_blank" ><?php echo str_cut($v['title'],30);?></a></li>
 				                <?php $n++;}unset($n); ?>
@@ -265,23 +265,17 @@
 			<div class="channel">
 				<h3>
 							视频短片
-							<span class="more">more&raquo;</span>
 						</h3>
 				<div class="body">
 					<div class="p">
 						<div class="video">
-							<img src="statics/images/ztct/2-3-1.png" style="margin: 4px;"/>
+							<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=0851621ae1c2303c90d975041f7cd2ec&action=lists&catid=35&num=1&moreinfo=1\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('catid'=>'35','moreinfo'=>'1','limit'=>'1',));}?> 
+								<?php $v = array_shift($data)?>
+								<?php echo $v[content]?>
+							<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+									
 						</div>
 					</div>
-					
-						<ul class="content text-border" style="height: 69px;">
-			                <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=47d362aaacde3c4b70338da97af2003a&action=lists&catid=6&num=7&order=id+DESC&return=info\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$info = $content_tag->lists(array('catid'=>'6','order'=>'id DESC','limit'=>'7',));}?>
-				                <?php $n=1;if(is_array($info)) foreach($info AS $v) { ?>
-								<li><span><?php echo date('Y-m-d',$v[updatetime]);?></span><a href="<?php echo $v['url'];?>" target="_blank" ><?php echo str_cut($v['title'],30);?></a></li>
-				                <?php $n++;}unset($n); ?>
-			                <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
-						</ul>
-					
 				</div>
 			</div>
 		</td>
