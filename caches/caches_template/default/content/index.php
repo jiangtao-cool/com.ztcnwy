@@ -82,19 +82,25 @@
 							<h3>
 								<span>住宅型物业</span>
 							</h3>
+							<a href="index.php?m=content&c=index&a=lists&catid=10&id=18">
 							<img src="statics/images/ztct/1-2-1.png">
+							</a>
 						</div>
 						<div class="title-img">
 							<h3>
-								<span>行政办公</span>
+								<span>办公型物业</span>
 							</h3>
+							<a href="index.php?m=content&c=index&a=lists&catid=10&id=19">
 							<img src="statics/images/ztct/1-2-2.png">
+							</a>
 						</div>
 						<div class="title-img">
 							<h3>
 								<span>公众型物业</span>
 							</h3>
+							<a href="index.php?m=content&c=index&a=lists&catid=10&id=20">
 							<img src="statics/images/ztct/1-2-3.png">
+							</a>
 						</div>
 					</div>
 					
@@ -117,7 +123,9 @@
 							<span class="more">more&raquo;</span>
 						</h3>
 						<div class="content img">
-							<img src="statics/images/ztct/1-1-1.png" />
+							<a href="http://www.ztlixin.com/">
+							<img src="statics/images/ztct/1-1-2.png" />
+							</a>
 						</div>
 					</div>
 					
@@ -126,19 +134,25 @@
 							<h3>
 								<span>智慧社区</span>
 							</h3>
-							<img src="statics/images/ztct/1-2-1.png">
+							<a href="index.php?m=content&c=index&a=show&catid=43&id=25">
+							<img src="statics/images/ztct/1-2-4.png">
+							</a>
 						</div>
 						<div class="title-img">
 							<h3>
 								<span>广告位招租</span>
 							</h3>
-							<img src="statics/images/ztct/1-2-2.png">
+							<a href="index.php?m=content&c=index&a=show&catid=43&id=26">
+							<img src="statics/images/ztct/1-2-5.png">
+							</a>
 						</div>
 						<div class="title-img">
 							<h3>
 								<span>商业活动</span>
 							</h3>
-							<img src="statics/images/ztct/1-2-3.png">
+							<a href="index.php?m=content&c=index&a=show&catid=43&id=27">
+							<img src="statics/images/ztct/1-2-6.png">
+							</a>
 						</div>
 					</div>
 					
@@ -161,7 +175,9 @@
 							<span class="more">more&raquo;</span>
 						</h3>
 						<div class="content img">
-							<img src="statics/images/ztct/1-1-1.png" />
+							<a href="index.php?m=content&c=index&a=lists&catid=9&id=1">
+							<img src="statics/images/ztct/1-1-3.png" />
+							</a>
 						</div>
 					</div>
 					
@@ -170,19 +186,25 @@
 							<h3>
 								<span>组织架构</span>
 							</h3>
-							<img src="statics/images/ztct/1-2-1.png">
+							<a href="index.php?m=content&c=index&a=lists&catid=9&id=2">
+							<img src="statics/images/ztct/1-2-7.png">
+							</a>
 						</div>
 						<div class="title-img">
 							<h3>
 								<span>主营业务</span>
 							</h3>
-							<img src="statics/images/ztct/1-2-2.png">
+							<a href="index.php?m=content&c=index&a=lists&catid=9&id=6">
+							<img src="statics/images/ztct/1-2-8.png">
+							</a>
 						</div>
 						<div class="title-img">
 							<h3>
 								<span>品牌优势</span>
 							</h3>
-							<img src="statics/images/ztct/1-2-3.png">
+							<a href="index.php?m=content&c=index&a=lists&catid=9&id=7">
+							<img src="statics/images/ztct/1-2-9.png">
+							</a>
 						</div>
 					</div>
 					
@@ -213,9 +235,14 @@
 							<span class="more">more&raquo;</span>
 						</h3>
 						<div class="content img-list">
+							<a href="index.php?m=content&c=index&a=show&catid=24&id=8">
 							<img src="statics/images/ztct/4-1-1.png" />
+							</a>
+							<a href="index.php?m=content&c=index&a=show&catid=24&id=3">
 							<img src="statics/images/ztct/4-1-2.png" />
+							</a>
 							<img src="statics/images/ztct/4-1-3.png" />
+							
 						</div>
 					</div>
 					
@@ -250,7 +277,9 @@
 							<span>人才理念</span>
 						</h3>
 						<div class="content img-list">
+							<a href="index.php?m=content&c=index&a=lists&catid=14&id=21">
 							<img src="statics/images/ztct/2-2-1.png" style="width: 100%;"/>
+							</a>
 						</div>
 					</div>
 					
@@ -259,7 +288,9 @@
 							<span>加入我们</span>
 						</h3>
 						<div class="content">
+							<a href="index.php?m=content&c=index&a=lists&catid=14&id=22">
 							<img src="statics/images/ztct/2-2-2.png" height="90px" />
+							</a>
 							<img src="statics/images/ztct/2-2-3.png" height="90px" style="float: right;"/>
 						</div>
 					</div>
